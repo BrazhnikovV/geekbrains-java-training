@@ -1,0 +1,20 @@
+# PostgreSQL adminer will run at localhost:8081
+# Use postgres/admin user/password credentials
+version: '2.0'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: admin
+      #POSTGRES_DB: jtraining
+    ports:
+      - 5432:5432
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
