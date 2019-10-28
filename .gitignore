@@ -29,3 +29,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Private properties ###
+/src/main/resources/private.properties
+
+### Flyway conf ###
+/src/main/resources/flyway.conf
